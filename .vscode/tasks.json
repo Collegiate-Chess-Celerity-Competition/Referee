@@ -7,7 +7,9 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${file}",
+                "${workspaceFolder}\\src\\RunGame.cpp",
+                "${workspaceFolder}\\src\\Game.cpp",
+                "${workspaceFolder}\\src\\GameBoard.cpp",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
