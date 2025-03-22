@@ -3,14 +3,15 @@
 
 #include "GameBoard.hpp"
 
-class Game {
- public:
+class Game
+{
+public:
   // Default Constructor
   Game();
 
   void print_settings();
 
- private:
+private:
   // Duration of entire chess game per player in seconds
   unsigned char game_time;
   // Additional time gained by a player after their move in milliseconds

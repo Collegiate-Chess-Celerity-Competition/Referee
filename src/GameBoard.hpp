@@ -2,16 +2,23 @@
 #define GAME_BOARD_HPP
 
 #include <string>
+#include <map>
+#include "GamePiece.hpp"
 
-class GameBoard {
-    public:
-        // Default Constructor
-        GameBoard();
+extern std::map<Piece, std::string> startPositionMap;
 
-        std::string to_string() const;
+class GameBoard
+{
+public:
+    // Default Constructor
+    GameBoard();
 
-    private:
-        int* gameMatrix[8][8];
+    std::string to_string() const;
+
+private:
+    unsigned char board_width = 8;
+    unsigned char board_height = 8;
+    GamePiece *gameMatrix[8][8];
 };
 
 #endif

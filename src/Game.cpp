@@ -1,12 +1,13 @@
 #include "Game.hpp"
 
 #include <iostream>
-#include "GameBoard.hpp"
+#include "Game.hpp"
 
 Game::Game()
-    : game_time(30), move_incr(0) {
-        gameBoard = GameBoard();
-      };
+    : game_time(30), move_incr(0)
+{
+    gameBoard = GameBoard();
+};
 
 void Game::print_settings()
 {
